@@ -1,0 +1,68 @@
+.footer {
+  background-color: #f8f8f8; /* Footer ka background color */
+  padding: 20px;
+  text-align: center; /* Center align text */
+}
+
+.footer-content {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center sections */
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1; /* Each section takes equal space */
+  margin: 0 20px; /* Space between sections */
+  text-align: left; /* Align text to the left */
+  display: flex; /* Use flexbox for vertical alignment */
+  flex-direction: column; /* Align items vertically */
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.footer-section h3 {
+  margin: 10px 0;
+  position: relative;
+  margin-bottom: 15px; 
+}
+
+.footer-section h3::after {
+  content: ""; /* Create a pseudo-element for the underline */
+  display: block;
+  width: 32%; /* Width of the underline */
+  height: 2px; /* Height of the underline */
+  background-color: red; /* Color of the underline */
+  position: absolute;
+  left: 0; /* Align to the left */
+  bottom: -5px; /* Position below the heading */
+}
+
+.footer-section p,
+.footer-section ul li a {
+  margin: 5px 0;
+  color: black; /* Default text color */
+  text-decoration: none; /* Remove default underline */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+.footer-section ul {
+  padding: 0; /* Remove default padding */
+}
+
+.footer-section ul li {
+  margin: 5px 0; /* Space between list items */
+  padding: 1px 0; /* Add padding for consistent spacing */
+}
+
+.footer-section p:hover,
+.footer-section ul li a:hover {
+  color: lightblue; /* Change text color to light blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+  text-decoration-color: lightblue; /* Light blue underline color */
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  text-align: center; /* Center align bottom text */
+}

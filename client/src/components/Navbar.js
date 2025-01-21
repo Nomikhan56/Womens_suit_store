@@ -3,12 +3,13 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { BsCart3, BsHeart, BsPerson } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import CategoryGrid from './CategoryGrid';
 import ImageSlider from './ImageSlider';
 
 function NavBar() {
   return (
     <>
-    <Navbar bg="white" expand="lg" className="shadow-sm">
+    <Navbar expand="lg" className="shadow-sm">
       <Container fluid>
         {/* Left side menu toggle and links */}
         <div className="d-flex align-items-center">
@@ -46,6 +47,7 @@ function NavBar() {
       </Container>
     </Navbar>
     <ImageSlider />
+    <CategoryGrid />
     </>
   );
 }

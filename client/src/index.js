@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import './css/CategoryGrid.css';
 import './css/FilterBar.css';
+import './css/Footer.css';
 import './css/ImageSlider.css';
 import './css/Navbar.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
   z-index: 1000; /* Keep navbar above all content */
-  background-color: white !important; /* Ensure background is solid */
+  background-color: #f8f8f8 !important; /* Ensure background is solid */
 }
 
 .navbar-brand {
