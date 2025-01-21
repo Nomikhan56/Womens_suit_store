@@ -1,0 +1,123 @@
+.custom-input-container {
+  position: relative;
+  width: 200px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.custom-input-container .form-control {
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.custom-input-container .form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+/* Dropdown Arrow Container */
+.dropdown-arrow-container {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  color: #6c757d;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  border-radius: 0;
+}
+
+/* Dropdown Item Button */
+.dropdown-item-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 15px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #dee2e6;
+  cursor: pointer;
+}
+
+.dropdown-item-btn:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item-btn:hover {
+  background-color: #f8f9fa;
+}
+
+.dropdown-item-btn:focus {
+  outline: none;
+}
+
+/* Remove spinner from number input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Mobile Responsive */
+/* @media (max-width: 768px) {
+  .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+} */
+/* Mobile Filter Styles */
+.mobile-filter-content {
+  width: 100%;
+}
+
+.filter-section {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.filter-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-content {
+  border-top: 1px solid #dee2e6;
+  background: #fff;
+}
+
+.dropdown-item-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 15px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #dee2e6;
+  cursor: pointer;
+}
+
+.dropdown-item-btn:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item-btn:hover {
+  background-color: #f8f9fa;
+}
+/* Rest of your existing styles */
