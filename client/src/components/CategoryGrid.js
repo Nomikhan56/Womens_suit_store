@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Ensure Link is imported
 import printed from '../assests/printed_pert.webp';
 import Pert from '../assests/Ready _to_wear.jpg';
 import shawls from '../assests/Shawls.jpg';
@@ -8,11 +9,11 @@ import '../css/CategoryGrid.css';
 
 function CategoryGrid() {
   const categories = [
-    { image: printed},
-    { image: shawls},
-    { image: unsPrinted},
-    { image: unsEmd},
-    { image: Pert}
+    { image: printed, link: '/Printed_Pert' }, // Link for printed image
+    { image: shawls },
+    { image: unsPrinted },
+    { image: unsEmd },
+    { image: Pert }
   ];
 
   return (
@@ -20,7 +21,9 @@ function CategoryGrid() {
       <div className="category-grid">
         {categories.map((category, index) => (
           <div key={index} className="category-item">
-            <img src={category.image} alt={category.title} />
+            <Link to={category.link || '#'}> {/* Use Link for navigation */}
+              <img src={category.image} alt={category.title} />
+            </Link>
             {/* <h3>{category.title}</h3> */}
           </div>
         ))}

@@ -3,8 +3,6 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { BsCart3, BsHeart, BsPerson } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import CategoryGrid from './CategoryGrid';
-import ImageSlider from './ImageSlider';
 
 function NavBar() {
   return (
@@ -46,8 +44,6 @@ function NavBar() {
         </div>
       </Container>
     </Navbar>
-    <ImageSlider />
-    <CategoryGrid />
     </>
   );
 }

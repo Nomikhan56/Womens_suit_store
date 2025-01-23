@@ -1,0 +1,44 @@
+/* PrintedPage.css */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space between items */
+    margin: 20px; /* Add margin around the grid */
+}
+
+.product-item {
+    flex: 0 1 calc(25% - 20px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    text-align: center; 
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff; 
+}
+
+.product-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.product-title {
+    font-size: 1.2em; /* Title font size */
+    margin: 10px 0; /* Space above and below title */
+    font-weight: normal; /* Bold text for sale price */
+}
+
+.sale-price {
+    font-size: 1em; /* Sale price font size */
+    color: #d9534f; /* Red color for sale price */
+    font-weight: bold; /* Bold text for sale price */
+}
+
+.regular-price {
+    font-size: 1em; /* Regular price font size */
+    color: #999; /* Grey color for regular price */
+}
+
+.line-through {
+    text-decoration: line-through; /* Line through effect */
+}

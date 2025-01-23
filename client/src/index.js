@@ -6,6 +6,7 @@ import './css/FilterBar.css';
 import './css/Footer.css';
 import './css/ImageSlider.css';
 import './css/Navbar.css';
+import './css/Printed_Pert.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
