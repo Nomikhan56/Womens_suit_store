@@ -52,7 +52,7 @@ function PrintedPage() {
       <div style={{ marginTop: "80px" }}>
         <FilterBar />
       </div>
-      <div className="content">
+      <div>
         {data.length > 0 ? (
           <div className="product-grid">
             {data.map((item) => {
@@ -62,7 +62,6 @@ function PrintedPage() {
               const hoverImage =
                 item["Image URLs"]?.find((url) => url.includes("-2.jpg")) ||
                 primaryImage; // Fallback to primary image if -2.jpg is missing
-
               return (
                 <div key={item._id} className="product-item">
                   <ImageWithPlaceholder

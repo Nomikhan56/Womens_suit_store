@@ -1,25 +1,26 @@
 .product-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px;
+  justify-content: space-between; 
+  margin: 20px; /* Adjust overall margin of the grid */
 }
 
 .product-item {
-  flex: 0 1 calc(25% - 20px); /* Responsive: 4 items per row */
-  margin-bottom: 30px;
-  padding: 10px;
-  border-radius: 5px;
+  flex: 0 1 calc(23.75%); /* 4 items per row with 5% gap */
+  margin-bottom: 20px; /* Spacing between rows */
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  box-shadow: none;
+  padding-bottom: 20px;
+  border: none;
 }
-
 .product-title {
   font-size: 0.8em; /* Slightly larger text */
   font-weight: 600; /* Semi-bold */
   color: #000; /* Black for better readability */
   margin: 5px 0; /* Space between title and price row */
   text-align: center; /* Center align the title */
+  /* padding-top: 10px; */
 }
 
 .price-row {
@@ -27,7 +28,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px; /* Add space between the prices */
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .regular-price {
@@ -38,7 +39,7 @@
 
 .sale-price {
   font-size: 0.9em; /* Larger than regular price */
-  color: #000; /* Black for emphasis */
+  color:red; /* Black for emphasis */
   font-weight: 600; /* Bold for stronger emphasis */
 }
 

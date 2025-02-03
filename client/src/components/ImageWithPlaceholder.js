@@ -1,33 +1,18 @@
-// components/ImageWithPlaceholder.js
-import React, { useEffect, useState } from "react";
-import "../css/ImageWithPlaceholder.css"; // Import the CSS specific to this component
+import React, { useState } from "react";
 
 function ImageWithPlaceholder({ primarySrc, hoverSrc, alt }) {
-  const [isHovered, setIsHovered] = useState(false);
-
-  useEffect(() => {
-    // Preload the hover image
-    if (hoverSrc) {
-      const img = new Image();
-      img.src = hoverSrc;
-    }
-  }, [hoverSrc]);
+  const [isLoaded, setIsLoaded] = useState(false); // Track image loading
 
   return (
-    <div
-      style={{ position: "relative", display: "inline-block" }}
-      onMouseEnter={() => setIsHovered(true)} // Switch to hover image
-      onMouseLeave={() => setIsHovered(false)} // Revert to primary image
-    >
+    <div className="image-container">
+      {!isLoaded && <div className="image-placeholder"></div>} {/* Loading indicator */}
       <img
-        src={isHovered ? hoverSrc : primarySrc} // Show hover image when hovered
+        src={primarySrc}
         alt={alt}
-        style={{
-          width: "100%",
-          height: "360",
-          borderRadius: "5px",
-          transition: "opacity 0.2s ease-in-out", // Smooth transition
-        }}
+        className={`product-image ${isLoaded ? "loaded" : ""}`}
+        onLoad={() => setIsLoaded(true)} // Set loaded state when image loads
+        onMouseEnter={(e) => (e.currentTarget.src = hoverSrc)} // Hover effect
+        onMouseLeave={(e) => (e.currentTarget.src = primarySrc)} // Restore primary image
       />
     </div>
   );

@@ -1,0 +1,24 @@
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.product-image {
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: contain; 
+  opacity: 0; 
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.product-image.loaded {
+  opacity: 1; /* Make the image visible once loaded */
+}
+
+.image-container:hover .product-image {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}

@@ -4,6 +4,7 @@ import App from './App';
 import './css/CategoryGrid.css';
 import './css/FilterBar.css';
 import './css/Footer.css';
+import './css/ImagePlaceHolder.css';
 import './css/ImageSlider.css';
 import './css/Navbar.css';
 import './css/Printed_Pert.css';
