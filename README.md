@@ -1,1 +1,2 @@
+# Women-suit-store
 Developed a responsive full-stack e-commerce web application using the MERN stack (MongoDB, Express.js, React.js, Node.js). The platform allows users to browse, search, and purchase women’s suits with dynamic product rendering. Integrated an intuitive admin panel for managing inventory and adding new products. Implemented secure user authentication, product filtering, and a clean, modern UI for a smooth shopping experience.
